@@ -9,6 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
+        "config",
         "favicon.ico"
       ],
       "index": "index.html",
@@ -19,9 +20,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "../node_modules/ngx-bootstrap/datepicker/bs-datepicker.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery-slim/dist/jquery.slim.min.js",
+        "../node_modules/bootstrap/js/dist/util.js",
+        "../node_modules/bootstrap/js/dist/collapse.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
